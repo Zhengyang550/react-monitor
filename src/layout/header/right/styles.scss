@@ -1,0 +1,28 @@
+@import '@/styles/other.scss';
+
+.headerRight {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  //垂直居中
+  align-items: center;
+  justify-content: flex-end;
+
+  > * {
+    flex: none;
+    margin: 0 16px 0 0;
+  }
+
+  > *:last-child {
+    margin-right: 40px;
+  }
+
+}
+
+
+@media screen and (max-width: 926px) {
+  .headerRight .searchBox {
+    display: none;
+  }
+}
